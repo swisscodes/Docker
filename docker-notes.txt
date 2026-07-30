@@ -6,3 +6,11 @@ docker run
 docker start
 docker exec
 docker stop
+
+testing the moving of folder and renaming after also renaming it on github
+i learned alot about submodules today and now i feel so confident about it and about git in general 
+mistakenly while just studying for docker :)
+
+git mv DOCKER FOLDER-IF-ANY/new-name
+
+git submodule add https://github.com/swisscodes/my-api.git folder/my-api
