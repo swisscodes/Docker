@@ -1,0 +1,8 @@
+find and fill them up with there usage
+
+docker ps
+docker ps -a
+docker run
+docker start
+docker exec
+docker stop
