@@ -2,7 +2,7 @@
 
 A practical reference guide covering daily container management, image building, volume persistence, networking, and system cleanup.
 
-1. System Info & Diagnostics
+1. ## System Info & Diagnostics
 
 ## Essential commands to inspect your local Docker installation and runtime environment
 
@@ -18,7 +18,7 @@ A practical reference guide covering daily container management, image building,
 
     docker stats
 
-2. Managing Images
+2. # Managing Images
 
 ## Images are read-only templates used to create Docker containers
 
@@ -50,7 +50,7 @@ A practical reference guide covering daily container management, image building,
 
     docker rmi -f my-app:1.0
 
-3. Container Lifecycle (Creating & Running)
+3. # Container Lifecycle (Creating & Running)
 
 ## Commands for running, stopping, and restarting containers
 
@@ -82,7 +82,7 @@ A practical reference guide covering daily container management, image building,
 
     docker run -d --name my-db --restart unless-stopped postgres:16
 
-4. Inspecting & Interacting with Running Containers
+4. # Inspecting & Interacting with Running Containers
 
 ## Commands to debug, check logs, or jump inside active containers
 
@@ -118,7 +118,7 @@ A practical reference guide covering daily container management, image building,
 
     docker top my-web-server
 
-5. Stopping & Removing Containers
+5. # Stopping & Removing Containers
 
 ### Gracefully stop a running container (SIGTERM)
 
@@ -148,7 +148,7 @@ A practical reference guide covering daily container management, image building,
 
     docker rm $(docker ps -aq -f "status=exited")
 
-6. Volumes & Data Persistence
+6. # Volumes & Data Persistence
 
 ## Volumes decouple persistent data from the container lifecycle
 
@@ -176,7 +176,7 @@ A practical reference guide covering daily container management, image building,
 
     docker volume rm my-db-data
 
-7. Docker Networking
+7. # Docker Networking
 
 ## Connect containers together on custom isolated virtual networks
 
@@ -201,9 +201,9 @@ A practical reference guide covering daily container management, image building,
 
     docker network rm my-app-net
 
-8. Docker Compose
+8. # Docker Compose
 
-Manage multi-container applications using docker-compose.yml
+    Manage multi-container applications using docker-compose.yml
 
 ### Start all services defined in docker-compose.yml in background
 
@@ -229,7 +229,7 @@ Manage multi-container applications using docker-compose.yml
 
     docker compose down -v
 
-9. System Cleanup & Maintenance
+9. # System Cleanup & Maintenance
 
 ## Reclaim disk space by clearing out unused images, stopped containers, and dangling build caches
 
